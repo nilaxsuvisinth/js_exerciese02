@@ -65,3 +65,13 @@ console.log("name"in person5);
 console.log(person5.hasOwnProperty("age"))
 
 //08
+const student={
+    name:"Nilax",
+    age: 24
+}
+const course={
+    book:"Web Design",
+    pages: 27
+}
+//spread operator - ES06
+let studentCourse={...student, ...course};

@@ -75,3 +75,45 @@ const course={
 }
 //spread operator - ES06
 let studentCourse={...student, ...course};
+
+ //9
+  //How do you check if an object  has a specific property say address? If there an address , log(address is there) in console if not (‘address not found)
+  const person6 ={
+    name: "nilax",
+    age:24,
+    city:"Mallavi"
+  };
+  if ("address" in person6) {
+    console.log("Address is there:", person6.address);
+  } else {
+    console.log("Address not found");
+  }
+  //10
+  //Create an object  book with properties fo title author and year and then convert it into a JSON string
+  const book = {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    year: 2022
+  };
+  const jsonString = JSON.stringify(book);
+  console.log(jsonString);
+  //11
+  //
+  const students = [
+    {
+      name: "nilax",
+      age: 24,
+      gpa: 3.1
+    },
+    {
+      name: "sankar",
+      age: 22,
+      gpa: 2.0
+    },
+    {
+      name: "kajuran",
+      age: 24,
+      gpa: 3.0
+    },
+  ];
+  console.log(students);

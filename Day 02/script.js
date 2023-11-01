@@ -128,3 +128,24 @@ function calculateBMI(weightKg, heightM) {
   console.log(`BMI: ${bmi.toFixed(2)}`);
   console.log(weightCategory);
   
+
+  // <=========== BMI =========>
+
+  function bmi(w, h) {
+    var finalBmi = w / (h*h)
+  
+  if (finalBmi<18.5){
+    return "under weight";
+  }
+  else if (finalBmi<24.5){
+    return "normal weight";
+  }
+  else if (finalBmi<29.5){
+    return "over weight";
+  }
+  else {
+    return "obese"
+  }
+}
+
+document.getElementById("one").innerHTML= bmi(30, 40)
